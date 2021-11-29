@@ -33,10 +33,31 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "copyright": "Copyright Great Idea! 2021",
   },
   "images": {
-    "logo-img": "http://localhost:9000/img/logo.png",
-    "cta-img": "http://localhost:9000/img/cta.png",
-    "accent-img": "http://localhost:9000/img/accent.png",
+    "logo-img": "mocks/img/logo.png",
+    "cta-img": "mocks/img/cta.png",
+    "accent-img": "mocks/img/accent.png",
   },
 };
 
+
+
 console.log('project wired!')
+
+// const navLinks = document.querySelectorAll("nav a");
+
+const headerImage = document.querySelector('header .logo')
+headerImage.src = siteContent['images']['logo-img']
+
+const ctaTitle = document.querySelector('.cta h1')
+ctaTitle.textContent = "DOM Is Awesome"
+
+const ctaButton = document.querySelector(".cta button ")
+ctaButton.textContent = "Get Started"
+
+const ctaImg = document.querySelector('.cta img')
+ctaImg.src = siteContent["images"]["cta-img"]
+
+const featuresH4 = document.querySelector("main-content h4")
+featuresH4.textContent = "Features"
+
+
