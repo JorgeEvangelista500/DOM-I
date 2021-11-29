@@ -43,21 +43,54 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
-// const navLinks = document.querySelectorAll("nav a");
+const nav = document.querySelectorAll("nav a");
+const linksTexts = Object.values(siteContent.nav)
+nav.forEach((link, idx)=> {
+  link.textContent = linksTexts[idx];
+  link.style.fontStyle = "italic";
+})
 
 const headerImage = document.querySelector('header .logo')
 headerImage.src = siteContent['images']['logo-img']
 
 const ctaTitle = document.querySelector('.cta h1')
-ctaTitle.textContent = "DOM Is Awesome"
+ctaTitle.textContent = siteContent.cta.h1
 
 const ctaButton = document.querySelector(".cta button ")
-ctaButton.textContent = "Get Started"
+ctaButton.textContent = siteContent.cta.button
 
 const ctaImg = document.querySelector('.cta img')
 ctaImg.src = siteContent["images"]["cta-img"]
 
-const featuresH4 = document.querySelector("main-content h4")
-featuresH4.textContent = "Features"
+const featuresTitles = document.querySelector(".top-content .text-content:nth-of-type(1) h4")
+featuresTitles.textContent = siteContent["main-content"]["features-h4"]
 
+const featuresContent = document.querySelector(".top-content .text-content:nth-of-type(1) p")
+featuresContent.textContent = siteContent["main-content"]["features-content"]
 
+const aboutTitle = document.querySelector(".top-content .text-content:nth-of-type(2) h4")
+aboutTitle.textContent = siteContent["main-content"]["about-h4"]
+
+const aboutContent = document.querySelector(".top-content .text-content:nth-of-type(2) p")
+aboutContent.textContent = siteContent["main-content"]["about-content"]
+
+const servicesTitle = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4")
+servicesTitle.textContent = siteContent["main-content"]["services-h4"]
+
+const servicesContent = document.querySelector(".bottom-content .text-content:nth-of-type(1) p")
+servicesContent.textContent = siteContent["main-content"]["services-content"]
+
+const midImage = document.querySelector(".middle-img")
+midImage.src = siteContent.images['accent-img']
+
+const productTitle = document.querySelector(".bottom-content .text-content:nth-of-type(2) h4")
+productTitle.textContent = siteContent["main-content"]["product-h4"]
+ 
+const productContent = document.querySelector(".bottom-content .text-content:nth-of-type(2) p")
+productContent.textContent = siteContent["main-content"]["product-content"]
+
+const visionTitle = document.querySelector(".bottom-content .text-content:nth-of-type(3) h4")
+visionTitle.textContent = siteContent["main-content"]["vision-h4"]
+
+const visionContent = document.querySelector(".bottom-content .text-content:nth-of-type(3) p")
+visionContent.textContent = siteContent["main-content"]["vision-content"]
