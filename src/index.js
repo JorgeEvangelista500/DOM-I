@@ -110,3 +110,4 @@ contactEmail.textContent = siteContent["contact"]["email"]
 const footer = document.querySelector("footer")
 footer.textContent = siteContent["footer"]["copyright"]
 
+footer.style.fontWeight = 'bold'
