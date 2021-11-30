@@ -94,3 +94,19 @@ visionTitle.textContent = siteContent["main-content"]["vision-h4"]
 
 const visionContent = document.querySelector(".bottom-content .text-content:nth-of-type(3) p")
 visionContent.textContent = siteContent["main-content"]["vision-content"]
+
+const contactTitle = document.querySelector(".contact h4")
+contactTitle.textContent = siteContent["contact"]["contact-h4"]
+
+const contactAddress = document.querySelector(".contact p:nth-of-type(1)")
+contactAddress.textContent = siteContent["contact"]["address"]
+
+const contactPhone = document.querySelector(".contact p:nth-of-type(2)")
+contactPhone.textContent = siteContent["contact"]["phone"]
+
+const contactEmail = document.querySelector(".contact p:nth-of-type(3)")
+contactEmail.textContent = siteContent["contact"]["email"]
+
+const footer = document.querySelector("footer")
+footer.textContent = siteContent["footer"]["copyright"]
+
